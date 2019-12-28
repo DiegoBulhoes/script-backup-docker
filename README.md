@@ -5,3 +5,11 @@ Script criado com o propósito de realizar backups de containers em ambiente de 
 ```
 pip3 install -r requirements.txt
 ```
+
+## Gerar documentação
+
+Para gera a documentação, entre o diretorio doc e execulte o seguinte comando:
+
+```
+sphinx-apidoc -f -o ./source .. && make html
+```
