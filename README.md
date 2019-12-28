@@ -13,3 +13,27 @@ Para gera a documentação, entre o diretorio doc e execulte o seguinte comando:
 ```
 sphinx-apidoc -f -o ./source .. && make html
 ```
+
+## Backup full
+
+Para realizar o backup de todos os containers, tanto que está no status _up_ ou _down_ basta executar:
+
+```
+python3 main.py -r full -p ./bk
+```
+
+## Backup de um container específico
+
+Para realizar o backup de um container específico basta executar
+
+```
+python3 main.py -r backup -c <ID_CONTAINER>  -p './backup'
+```
+
+## Restaurar o backup de um container específico
+
+Para realizar o backup de um container específico basta executar
+
+```
+python3 main.py -r retore -c <ID_CONTAINER>  -t container -p ./
+```
