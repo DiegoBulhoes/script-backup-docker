@@ -1,3 +1,5 @@
 .vscode
 bk
 *.pyc
+doc/build
+env/
